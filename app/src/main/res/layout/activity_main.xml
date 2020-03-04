@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".MainActivity"
+      android:orientation="vertical">
+
+      <!--scroll view start-->
+     <ScrollView
+           android:id="@+id/sv_scroll_id"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+
+
+
+
+                 <ImageView
+                       android:layout_marginTop="20dp"
+                       android:id="@+id/iv_chooseImage_id"
+                       android:layout_width="180dp"
+                       android:layout_height="180dp"
+                       android:src="@drawable/childimage"
+                       android:layout_gravity="center">
+
+                 </ImageView>
+
+                 <Button
+                       android:layout_gravity="center"
+                       android:id="@+id/btn_chooseImage_id"
+                       android:layout_centerHorizontal="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/choose_image_button_border"
+                       android:padding="15dp"
+                       android:text="Choose Image"
+                       android:textColor="@color/colorWhite"
+                       android:textSize="12dp">
+
+                 </Button>
+
+                 <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="690dp"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/bg_yellow_corners"
+                       android:orientation="vertical">
+
+                       <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/btn_chooseImage_id"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="20dp"
+                             android:background="@color/colorWhite"
+                             android:text="Enter Child's Details"
+                             android:textSize="16dp"
+                             android:textStyle="bold">
+
+                       </TextView>
+
+                       <EditText
+                             android:id="@+id/et_childName_id"
+                             android:layout_width="300dp"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="20dp"
+                             android:background="@drawable/child_name_edittexts"
+                             android:gravity="center"
+                             android:hint="Child's Real Name"
+                             android:padding="15dp">
+
+                       </EditText>
+
+                       <EditText
+                             android:id="@+id/et_childNickname_id"
+                             android:layout_width="300dp"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="20dp"
+                             android:background="@drawable/child_name_edittexts"
+                             android:gravity="center"
+                             android:hint="Child's Nick Name"
+                             android:padding="15dp">
+
+                       </EditText>
+
+                       <EditText
+                             android:id="@+id/et_childhome_id"
+                             android:layout_width="300dp"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="20dp"
+                             android:background="@drawable/child_name_edittexts"
+                             android:gravity="center"
+                             android:hint="Child's Home Area"
+                             android:padding="15dp">
+
+                       </EditText>
+
+                       <EditText
+                             android:id="@+id/et_childschool_id"
+                             android:layout_width="300dp"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="20dp"
+                             android:background="@drawable/child_name_edittexts"
+                             android:gravity="center"
+                             android:hint="Child's School"
+                             android:padding="15dp">
+
+                       </EditText>
+
+                       <EditText
+                             android:id="@+id/et_childlastseen_id"
+                             android:layout_width="300dp"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="20dp"
+                             android:background="@drawable/child_name_edittexts"
+                             android:gravity="center"
+                             android:hint="Where was the Child Last Seen at?"
+                             android:padding="15dp">
+
+                       </EditText>
+
+                       <EditText
+                             android:id="@+id/et_child_dob_id"
+                             android:layout_width="300dp"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="20dp"
+                             android:background="@drawable/child_name_edittexts"
+                             android:gravity="center"
+                             android:hint="Child's Date of Birth DD/MM/YYYY"
+                             android:padding="15dp">
+
+                       </EditText>
+
+                       <TextView
+                             android:layout_width="350dp"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginStart="20dp"
+                             android:layout_marginTop="20dp"
+                             android:text="Is the Missing Child a Girl or Boy?"
+                             android:textSize="16dp"
+                             android:textStyle="bold">
+
+                       </TextView>
+
+                       <RadioButton
+                             android:id="@+id/rbn_select_id"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="20dp"
+                             android:layout_marginTop="8dp"
+                             android:text="Boy"
+                             android:textSize="16dp"
+                             android:textStyle="bold">
+
+
+                       </RadioButton>
+
+                       <RadioButton
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="20dp"
+                             android:layout_marginTop="8dp"
+                             android:text="Girl"
+                             android:textSize="16dp"
+                             android:textStyle="bold">
+
+                       </RadioButton>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="270dp"
+                       android:orientation="vertical"
+                       android:background="@drawable/bg_yellow_corners"
+                       android:layout_marginTop="20dp">
+
+                       <TextView
+                             android:id="@+id/tv_guardian_id"
+                             android:layout_width="350dp"
+                             android:textSize="16dp"
+                             android:textStyle="bold"
+                             android:layout_height="wrap_content"
+                             android:text="Parent/Guardian's Details"
+                             android:layout_marginTop="20dp"
+                             android:gravity="center">
+
+                       </TextView>
+
+
+                       <EditText
+                             android:layout_gravity="center"
+                             android:layout_width="250dp"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/et_parentGuardian_id"
+                             android:hint="Enter Parent/Guardian's Name"
+                             android:layout_marginTop="20dp"
+                             android:background="@drawable/child_name_edittexts"
+                             android:padding="15dp"
+                             android:inputType="text">
+
+
+                       </EditText>
+
+                       <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="20dp">
+
+
+                             <EditText
+                                   android:id="@+id/et_code_id"
+                                   android:layout_width="100dp"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginStart="40dp"
+                                   android:background="@drawable/child_name_edittexts"
+                                   android:padding="10dp"
+                                   android:text="KE +254">
+
+
+                             </EditText>
+
+                             <EditText
+                                   android:id="@+id/et_phonenumber_id"
+                                   android:layout_width="150dp"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginStart="55dp"
+                                   android:background="@drawable/child_name_edittexts"
+                                   android:hint="Phone Number"
+                                   android:inputType="number"
+                                   android:padding="10dp">
+
+
+                             </EditText>
+
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="0dp"
+                             android:orientation="vertical">
+
+                       <TextView
+                             android:layout_width="350dp"
+                             android:layout_height="wrap_content"
+                             android:textStyle="bold"
+                             android:textSize="16dp"
+                             android:text="How are you related to the missing child?"
+                             android:layout_marginStart="10dp"
+                             android:layout_marginTop="20dp">
+
+                       </TextView>
+
+
+                       <RadioButton
+                             android:id="@+id/rbn_selectChildFather_id"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="I'm child's Father"
+                             android:textSize="16dp"
+                             android:textStyle="bold"
+                             android:layout_marginStart="20dp"
+                             android:layout_marginTop="8dp">
+
+
+                       </RadioButton>
+
+
+                       <RadioButton
+                             android:textStyle="bold"
+                             android:textSize="16dp"
+                             android:id="@+id/rbn_selectChildMother_id"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="I'm child's Mother"
+                             android:layout_marginStart="20dp"
+                             android:layout_marginTop="8dp">
+
+
+                       </RadioButton>
+
+
+                       <RadioButton
+                             android:textSize="16dp"
+                             android:textStyle="bold"
+                             android:id="@+id/rbn_selectChildGuardian_id"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="I'm child's Guardian"
+                             android:layout_marginStart="20dp"
+                             android:layout_marginTop="8dp">
+
+
+                       </RadioButton>
+                       </LinearLayout>
+
+                 </LinearLayout>
+
+           <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:orientation="vertical"
+                 android:background="@drawable/bg_yellow_corners"
+                 android:layout_marginTop="20dp">
+
+                 <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Child's Attire"
+                       android:id="@+id/tv_attire_id"
+                       android:gravity="center"
+                       android:layout_marginTop="20dp"
+                       android:textSize="16dp"
+                       android:textStyle="bold">
+
+                 </TextView>
+
+                 <EditText
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/et_attire_id"
+                       android:text="What type and color of clothes was the child last seen wearing?"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/child_name_edittexts"
+                       android:padding="25dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginStart="10dp"
+                       android:gravity="center"
+                       android:layout_gravity="center">
+
+
+                 </EditText>
+
+           </LinearLayout>
+
+           <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="250dp"
+                 android:orientation="vertical"
+                 android:background="@drawable/bg_yellow_corners"
+                 android:layout_marginTop="20dp">
+
+                 <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="More Information"
+                       android:id="@+id/tv_info_id"
+                       android:gravity="center"
+                       android:layout_marginTop="20dp"
+                       android:textSize="23dp"
+                       android:textStyle="bold">
+
+                 </TextView>
+                 <!--Edit Text Start-->
+                 <EditText
+                       android:gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/et_more_info_id"
+                       android:text="Provide any other information that could help describe the child"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:background="@drawable/child_name_edittexts"
+                       android:padding="25dp"
+                       android:layout_gravity="center">
+
+
+                 </EditText>
+
+           </LinearLayout>
+                 <!--Button Start-->
+                 <Button
+                       android:layout_gravity="center"
+                       android:id="@+id/btn_submit_id"
+                       android:layout_centerHorizontal="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="55dp"
+                       android:layout_marginTop="20dp"
+                       android:background="@drawable/choose_image_button_border"
+                       android:padding="15dp"
+                       android:text="Submit Details"
+                       android:textColor="@color/colorWhite"
+                       android:textSize="12dp"
+                       android:layout_marginBottom="5dp">
+
+                 </Button>
+                 <!--Button End-->
+
+
+           </LinearLayout>
+
+     </ScrollView>
+      <!--Scroll View End-->
+
+</LinearLayout>
